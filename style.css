@@ -1,0 +1,518 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url('Imagenes/BackgroundPedal.png'); /* Ruta de tu imagen de fondo */
+    background-size: contain; /* Cubre toda la pantalla */
+    margin: 0; /* Elimina el margen por defecto del body */ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    font-size: 1rem;
+    font-style:italic;
+    background: linear-gradient(90deg, #d4ab6dab);
+    position: relative; /* Permite posicionar elementos absolutamente en su interior */
+    display: flex;
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+    align-items: center; /* Centra verticalmente el contenido */
+    padding: 10px; /* Añade espacio alrededor */
+    color: rgb(248, 235, 206); /* Color del texto */
+    z-index: 1; /* Asegura que el header esté sobre el fondo */
+    width: 90%;
+}
+.header-title {
+    margin-left: 40px;
+}
+
+.header-nav {
+    flex: 1;
+    display: flex;
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 200px; /*mueve los elementos a la derecha */
+    display: flex;
+   
+}
+
+.header-nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos */
+    padding-top: 5px;
+}
+
+.header-nav ul li a {
+    color: rgba(248, 235, 206);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:bolder;
+    transition: color 0.3s ease;
+}
+
+.header-nav ul li a:hover {
+    color: rgba(205, 219, 187, 0.856);
+}
+
+.header-icons {
+    display: flex; /* Para alinear los íconos horizontalmente */
+    justify-content: flex-end; /* Aligna los íconos a la derecha */
+}
+
+.header-icons a {
+    margin-left: 15px;
+    color: rgba(248, 235, 206);
+    font-size: 24px;
+    text-decoration: none; /* Añadido para consistencia */
+    transition: color 0.3s ease;
+}
+
+.header-icons a:hover {
+    color: rgba(205, 219, 187, 0.856); /* O cambiar al color deseado */
+}
+
+main #Buy\ Now {
+    text-align: center;
+    padding: 4rem 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  
+  main #Buy\ Now h2 {
+    font-size: 3.5rem;
+    margin: 1.5rem;
+    color: #ffffff;
+  }
+  
+  main #Buy\ Now p {
+    font-size: 1.5rem;
+    margin: 1.8rem auto;
+    color: #ffffff;
+  }
+  
+  .btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.7rem 2rem;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 1rem 0;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  /* Estilado General para la Sección Pedals */
+#Pedals {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #333;
+  }
+  
+  #Pedals h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* Contenedor para los Pedales */
+  .pedals-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilado Individual para las Tarjetas de Pedales */
+  .pedal-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 280px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .pedal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pedal-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  .pedal-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .pedal-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+/*Responsive*/
+  @media (max-width: 768px) {
+    .pedals-container {
+      justify-content: center;
+    }
+  
+    .pedal-card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #Pedals h2 {
+      font-size: 1.8rem;
+    }
+  
+    .pedal-card h3 {
+      font-size: 1rem;
+    }
+  
+    .pedal-card p {
+      font-size: 0.8rem;
+    }
+  }
+
+  .buy-btn {
+    display: block;
+    margin: 1rem auto 0;
+    padding: 0.7rem 1.5rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .buy-btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+  }
+
+/*Responsive*/
+  @media (max-width: 768px) {
+    .buy-btn {
+      width: 100%;
+      padding: 0.8rem 0;
+    }
+  }
+
+  /* Estilado General para la Sección Rating */
+#rating {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #333;
+  }
+  
+  #rating h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  /* Contenedor de las tarjetas de Testimonios */
+  .rating-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  /* Estilado Individual para las tarjetas de Comentarios */
+  .rating-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 320px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  
+  .rating-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .rating-card .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .rating-card .user-info img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .rating-card .user-info .user-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .rating-card .stars {
+    margin: 0.5rem 0;
+  }
+  
+  .rating-card .stars .star {
+    color: #FFD700; /* Color dorado para estrellas */
+    font-size: 1rem;
+  }
+  
+  .rating-card p.comment {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+  }
+
+/*Responsive*/
+  @media (max-width: 768px) {
+    .rating-container {
+      justify-content: center;
+    }
+  
+    .rating-card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .rating-card .user-info img {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .rating-card .user-info .user-name {
+      font-size: 0.9rem;
+    }
+  
+    .rating-card p.comment {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Sección de Pagos */
+#payment {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #333;
+  }
+  
+  #payment h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  .payment-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .payment-options {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 45%;
+  }
+  
+  .payment-options h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .payment-methods {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .payment-card {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+  }
+  
+  .payment-card:hover {
+    transform: scale(1.1);
+  }
+  
+  .payment-card img {
+    max-width: 60px;
+    max-height: 60px;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Sección de Contactos */
+#contact {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-bottom: 2px solid #333;
+  }
+  
+  #contact h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+  }
+  
+  /* Contenedor del formulario */
+  .contact-form-container {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form-container form fieldset {
+    border: none;
+  }
+  
+  .contact-form-container label {
+    margin: 0.5rem 0 0.3rem;
+    font-size: 1rem;
+  }
+  
+  .contact-form-container input,
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-form-container button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form-container button:hover {
+    background-color: #555;
+  }
+  
+  /* Opciones de contacto rápido */
+  .quick-contact {
+    margin: 2rem 0;
+  }
+  
+  .quick-contact ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  .quick-contact a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .quick-contact a:hover {
+    color: #555;
+  }
+  
+  /* Mapa */
+  .map-container {
+    margin: 2rem 0;
+    max-width: 1200px;
+    height: 350px;
+  }
+
+  /* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-top: 2px solid #555;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0 0 1rem 0;
+  }
+  
+  .footer-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links li a:hover {
+    color: #aaa;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .footer-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  }
